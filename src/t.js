@@ -11,7 +11,14 @@ const t = (string, options = {}) => {
   debug(`translating string: ${string}`)
 
   if (options.interpolate === true) {
-    return <Interpolate i18nKey={string} regexp={REGEX} {...options} />
+    return (
+      <Interpolate
+        i18nKey={string}
+        regexp={REGEX}
+        options={{count: options.count}}
+        {...options}
+      />
+    )
   }
 
   return i18next.t(string, options)
