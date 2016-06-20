@@ -8,7 +8,7 @@ const translate = (element, pureWrapper = true) => {
   debug('wrapping component')
 
   if (pureWrapper) {
-    return pure(_translate()(element))
+    return _translate()(pure(element))
   }
 
   return _translate()(element)
