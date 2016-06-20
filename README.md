@@ -1,4 +1,4 @@
-# react-localize
+# react-globe
 
 > *Easy but feature-rich localizing of react applications, with translations, plurals, dates, ... <br/>
 > Localizing an application is not fun, so it shouldn't be hard too.* :relieved:
@@ -6,7 +6,7 @@
 ## Install
 
 ```bash
-npm install --save react-localize
+npm install --save react-localize react-intl
 ```
 
 ## Features
@@ -30,7 +30,7 @@ If you are using [webpack](https://github.com/webpack/webpack), you can load you
 Swap the language and your whole application will re-render in the new language, without having to reload the page.
 
 **Marking missing translations**<br/>
-In development mode, you can highlight which elements are translated and which ones are missing a translation.
+You can highlight which elements are missing a translation with a debug flag.
 
 **["Pure render"](https://facebook.github.io/react/docs/shallow-compare.html) components for performant runtime-translations**<br/>
 Components should always render the same, given the same `state` and `props`. This is the case if you use [Redux](http://redux.js.org/) for example! Here it is used to reduce translation overhead. *You can opt out of this, but it is highly discouraged*.

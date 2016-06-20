@@ -1,0 +1,46 @@
+{
+  "name": "react-globe",
+  "version": "0.1.0",
+  "description": "Easy but feature-rich localizing of react applications, with translations, plurals, dates, ... ",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queicherius/react-globe.git"
+  },
+  "keywords": [
+    "react",
+    "localization",
+    "translation",
+    "internationalization",
+    "i18n",
+    "plural",
+    "date",
+    "number",
+    "formatting",
+    "interpolation",
+    "webpack"
+  ],
+  "author": "queicherius@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/queicherius/react-localize/issues"
+  },
+  "homepage": "https://github.com/queicherius/react-localize#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "i18next": "^3.2.0",
+    "react": "^15.1.0",
+    "react-i18next": "^1.5.2",
+    "react-intl": "^2.1.3",
+    "recompose": "^0.20.0"
+  }
+}
