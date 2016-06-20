@@ -44,21 +44,24 @@ class Provider extends React.Component {
   }
 
   shouldComponentUpdate (nextProps) {
-    return this.props.lang !== nextProps.lang
-  }
+    let shouldUpdate = this.props.lang !== nextProps.lang
 
-  componentDidUpdate () {
-    debug(`changing language to '${this.props.lang}'`)
-    i18next.changeLanguage(this.props.lang)
+    if (shouldUpdate) {
+      debug(`changing language to '${nextProps.lang}'`)
+      i18next.changeLanguage(nextProps.lang)
+      return true
+    }
+
+    return false
   }
 
   render () {
     return (
-      <I18nextProvider i18n={i18next}>
-        <IntlProvider locale={this.props.lang}>
+      <IntlProvider locale={this.props.lang}>
+        <I18nextProvider i18n={i18next}>
           {this.props.children}
-        </IntlProvider>
-      </I18nextProvider>
+        </I18nextProvider>
+      </IntlProvider>
     )
   }
 }
