@@ -1,4 +1,4 @@
-const debug = require('debug')('react-localize:tDate')
+const debug = require('debug')('react-globe:tDate')
 import React from 'react'
 import {FormattedDate, FormattedRelative} from 'react-intl'
 

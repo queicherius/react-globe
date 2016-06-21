@@ -1,4 +1,4 @@
-const debug = require('debug')('react-localize:Provider')
+const debug = require('debug')('react-globe:Provider')
 import React from 'react'
 import i18next from 'i18next'
 import {I18nextProvider} from 'react-i18next'

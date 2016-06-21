@@ -1,4 +1,4 @@
-const debug = require('debug')('react-localize:t')
+const debug = require('debug')('react-globe:t')
 import React from 'react'
 import i18next from 'i18next'
 import {Interpolate} from 'react-i18next'

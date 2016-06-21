@@ -1,4 +1,4 @@
-const debug = require('debug')('react-localize:tNumber')
+const debug = require('debug')('react-globe:tNumber')
 import React from 'react'
 import {FormattedNumber} from 'react-intl'
 

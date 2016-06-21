@@ -1,4 +1,4 @@
-const debug = require('debug')('react-localize:translate')
+const debug = require('debug')('react-globe:translate')
 import {translate as _translate} from 'react-i18next'
 import pure from 'recompose/pure'
 
