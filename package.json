@@ -1,6 +1,6 @@
 {
   "name": "react-globe",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easy but feature-rich localizing of react applications, with translations, plurals, dates, ... ",
   "main": "dist/index.js",
   "scripts": {
