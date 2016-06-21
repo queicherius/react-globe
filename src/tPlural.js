@@ -14,7 +14,7 @@ const tPlural = (messages, options = {}) => {
   }
 
   // Manually generate english pluralisation based on gettext style
-  if (i18next.language === 'en') {
+  if (i18next.language === 'en' || !i18next.exists(messages.one)) {
     return englishPlural(messages, options)
   }
 
