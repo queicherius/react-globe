@@ -13,25 +13,30 @@ const tPlural = (messages, options = {}) => {
     return null
   }
 
-  // Manually generate english pluralisation based on gettext style
-  if (i18next.language === 'en' || !i18next.exists(messages.one)) {
-    return englishPlural(messages, options)
+  if (options.count === 0) {
+    return handleZero(messages, options)
   }
 
-  // Return an extra string for 0 counts
-  if (options.count === 0) {
-    return t(messages.zero || messages.one, options)
+  // Manually generate english pluralisation based on gettext style
+  if (i18next.language === 'en' || !i18next.exists(messages.one, options)) {
+    return englishPlural(messages, options)
   }
 
   // The translation function figures out plurals for us
   return t(messages.one, options)
 }
 
-const englishPlural = (messages, options) => {
-  if (options.count === 0) {
-    return t(messages.zero || messages.many, options)
-  }
+const handleZero = (messages, options) => {
+  // When the language is no english, fallback to the 'one' string,
+  // because the "t" translation function will pick the correct plural that way
+  var fallback = i18next.language === 'en' || !i18next.exists(messages.one, options)
+    ? messages.many
+    : messages.one
 
+  return t(messages.zero || fallback, options)
+}
+
+const englishPlural = (messages, options) => {
   if (options.count === 1) {
     return t(messages.one, options)
   }
