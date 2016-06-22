@@ -1,7 +1,7 @@
 {
   "name": "react-globe",
   "version": "0.1.3",
-  "description": "Easy but feature-rich localizing of react applications, with translations, plurals, dates, ... ",
+  "description": "Painless localizing of react applications with translations, plurals, numbers, dates and times.",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "npm run build --silent",
