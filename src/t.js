@@ -10,7 +10,7 @@ const REGEX = /\{\{(.+?)\}\}/g
 const t = (string, options = {}) => {
   debug(`translating string: ${string}`)
 
-  if (options.interpolate === true) {
+  if (options.react === true) {
     return (
       <Interpolate
         i18nKey={string}
