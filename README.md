@@ -1,6 +1,6 @@
 # react-globe
 
-> *Painless localizing of React applications with translations, plurals, numbers, dates and times.* 🌍<br/>
+> *Painless localising of React applications with translations, plurals, numbers, dates and times.* 🌍<br/>
 > *Internationalisation is not fun, so it should be easy.* 😌
 
 - [Gettext](https://www.gnu.org/software/gettext/manual/gettext.html) translation support (keys are the original English text)
@@ -10,7 +10,7 @@
 - Translation files can be imported directly via webpack
 - Changing language without page reload
 - Marking missing translations
-- Performant runtime that minimize re-translating
+- Performant runtime that minimizes re-translating
 
 ## Usage
 
@@ -98,7 +98,7 @@ config.module.loaders = config.module.loaders
   .concat([{test: /\.po$/, loaders: ['i18next-po-loader']}])
 ```
 
-And now you can just import the messages from `po` files, which will automatically convert them into the format that is expected:
+Now you can just import the messages from `po` files, which will automatically convert them into the format that is expected:
 
 ```js
 import deMessages from './translations/de.po'
@@ -273,9 +273,9 @@ javascript:for(var elements=document.getElementsByTagName("*"),i=0;i!=elements.l
 
 > It feels laggy when I have a lot of components.
 
-1. Make sure you wrapped all your translated components with the [higher order component](#wrap-your-translated-components) and they are small, [pure components](https://facebook.github.io/react/docs/shallow-compare.html) with as little state/props as possible. This is the single most impactful improvement you can make. (And it's the easiest mistake to make.)
-2. If you are rendering **a lot** of components, React in the development build may be slow itself. Make sure you are using the [production build](https://facebook.github.io/react/downloads.html#development-vs.-production-builds).
-3. If nothing else helps, this module uses [debug](https://github.com/visionmedia/debug), so you can inspect what it does in your browser's console after setting `localStorage.debug = 'react-globe:*'`
+1. Make sure you wrapped all your translated components with the [higher order component](#wrap-your-translated-components) and they are small, [pure components](https://facebook.github.io/react/docs/shallow-compare.html) with as little state/props as possible. This is the single most impactful improvement you can make. (And it's the easiest mistake to make).
+2. If you are rendering **a lot** of components, React in the development build may be slow itself, so make sure you are using the [production build](https://facebook.github.io/react/downloads.html#development-vs.-production-builds).
+3. If nothing else helps, this module uses [debug](https://github.com/visionmedia/debug) so you can inspect what it does in your browser's console after setting `localStorage.debug = 'react-globe:*'`
 
 > My component doesn't update anymore.
 
