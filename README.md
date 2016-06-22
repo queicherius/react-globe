@@ -3,7 +3,7 @@
 > *Painless localizing of React applications with translations, plurals, numbers, dates and times.* 🌍<br/>
 > *Internationalisation is not fun, so it should be easy.* 😌
 
-- [Gettext](https://www.gnu.org/software/gettext/manual/gettext.html) translation support (keys are the original english text)
+- [Gettext](https://www.gnu.org/software/gettext/manual/gettext.html) translation support (keys are the original English text)
 - Translation messages can be interpolated with values, including React components
 - Internationalisation support for plurals, numbers, dates and times
 - Translation messages can be extracted out of the source code automatically
@@ -149,7 +149,7 @@ render(
 
 ### Wrap your translated components
 
-To ensure that all translated components are in sync and don't get rerendered unneccessary, you have to wrap all your translated components in a higher order component. 
+To ensure that all translated components are in sync and don't get rerendered unnecessary, you have to wrap all your translated components in a higher order component. 
 
 ```js
 import {translate} from 'react-globe'
@@ -263,7 +263,7 @@ react-globe-cli --files='./src/**/*.js' --output='templates.pot'
 
 ### Highlight missing messages
 
-When setting the debug flag in the [provider](#setup-the-provider) missing messages will be highlighted with brackets around them `[[Some missing string]]`. If you want to highlight them more obiously, you can use the following code as a bookmarklet to highlight all missing translation messages with a orange background:
+When setting the debug flag in the [provider](#setup-the-provider) missing messages will be highlighted with brackets around them `[[Some missing string]]`. If you want to highlight them more obviously, you can use the following code as a bookmarklet show all missing translation messages with a orange background:
 
 ```js
 javascript:for(var elements=document.getElementsByTagName("*"),i=0;i!=elements.length;i++){var element=elements[i];element.innerHTML.match(/^\[\[.*\]\]$/)&&(element.style+=";background-color:orange !important")}
