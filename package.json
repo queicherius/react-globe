@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "i18next": "^3.2.0",
+    "i18next": "^4.0.0",
     "react": "^15.1.0",
     "react-i18next": "^1.5.2",
     "react-intl": "^2.1.3",
