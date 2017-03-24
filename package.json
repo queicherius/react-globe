@@ -1,6 +1,6 @@
 {
   "name": "react-globe",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Painless localising of react applications with translations, plurals, numbers, dates and times.",
   "main": "dist/index.js",
   "scripts": {
