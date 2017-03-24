@@ -35,7 +35,7 @@
 ### Install the module
 
 ```bash
-npm install --save react-localize react-intl
+npm install --save react-globe react-intl
 ```
 
 ### Setup the Provider
