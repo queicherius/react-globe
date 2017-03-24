@@ -281,6 +281,18 @@ javascript:for(var elements=document.getElementsByTagName("*"),i=0;i!=elements.l
 
 Make sure that the component wrapped with the [higher order component](#wrap-your-translated-components) is a [pure component](https://facebook.github.io/react/docs/shallow-compare.html) or turn the pure rendering off by passing `false` as the second argument to `translate`.
 
+## Mocking via Jest
+
+This module allows to be easily mocked via the Jest `moduleNameMapper` configuration. This way, it always just returns the English message string for all methods and does not require the `Provider` setup, allowing for isolated testing of components.
+
+```js
+"jest": {
+  "moduleNameMapper": {
+    "^react-globe$": "react-globe/mock"
+  }
+}
+```
+
 ## Licence
 
 MIT
