@@ -1,3 +1,7 @@
+### :boom: Careful: This package is no longer maintained and is only here for historic reasons. This means you should very likely not use it. Use the excellent [js-lingui](https://github.com/lingui/js-lingui) instead. You have been warned. :boom:
+
+---
+
 # react-globe
 
 > *Painless localising of React applications with translations, plurals, numbers, dates and times.* 🌍<br/>
